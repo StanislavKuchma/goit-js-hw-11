@@ -20,9 +20,8 @@ export default class ApiService{
                         button.setAttribute('hidden', true);
                         container.innerHTML = '';
                         Notiflix.Notify.failure(`Sorry, there are no images matching your search query. Please try again. `);
-                        return
-                    }
-                    if (this.page * 40 >= response.data.total) {
+                        } else
+                    if (this.page * 40 >response.data.total) {
                             Notiflix.Notify.failure("We're sorry, but you've reached the end of search results.");
                     }
                     return response.data.hits

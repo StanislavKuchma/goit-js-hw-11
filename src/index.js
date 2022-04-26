@@ -22,7 +22,6 @@ function onClickMore(e) {
       const date = data;
     // let { webformatURL, largeImageURL, likes, views, comments, downloads } = date;
     const markUpInfo = imageMarkup(date);
-    console.log(markUpInfo)
     container.insertAdjacentHTML('beforeend', markUpInfo);
     })
 }
